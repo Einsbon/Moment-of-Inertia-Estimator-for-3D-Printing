@@ -317,18 +317,18 @@ namespace InertialEstimator
                 + String.Format("Total filament used [g]: {0:0.000}\r\n\r\n", totalMass)
                 + String.Format("Filament used on the part to be removed [mm]: {0:0.000}\r\n", excludedExtrudeLength)
                 + String.Format("Mass excluding the part to be removed [g] {0:0.000}\r\n\r\n", excludedMass)
-                + String.Format("Moment of inertia at ({0}, {1}, {2}) [g / mm^2]:\r\n",
+                + String.Format("Moment of inertia at ({0}, {1}, {2}) [g * mm^2]:\r\n",
                     mOriginX, mOriginY, mOriginZ)
-                + String.Format(" ixx: {0:0.000}\r\n", ixx)
-                + String.Format(" iyy: {0:0.000}\r\n", iyy)
-                + String.Format(" izz: {0:0.000}\r\n\r\n", izz)
-                + String.Format("Moment of inertia at Center Of Mass ({0:0.000}, {1:0.000}, {2:0.000}) [g / mm^2]:\r\n",
+                + String.Format(" ixx: {0:0.00000}\r\n", ixx)
+                + String.Format(" iyy: {0:0.00000}\r\n", iyy)
+                + String.Format(" izz: {0:0.00000}\r\n\r\n", izz)
+                + String.Format("Moment of inertia at Center Of Mass ({0:0.000}, {1:0.000}, {2:0.000}) [g * mm^2]:\r\n",
                     centerOfMassX,
                     centerOfMassY,
                     centerOfMassZ)
-                + String.Format(" ixx: {0:0.000}\r\n", ixxCm)
-                + String.Format(" iyy: {0:0.000}\r\n", iyyCm)
-                + String.Format(" izz: {0:0.000}\r\n\r\n", izzCm)
+                + String.Format(" ixx: {0:0.00000}\r\n", ixxCm)
+                + String.Format(" iyy: {0:0.00000}\r\n", iyyCm)
+                + String.Format(" izz: {0:0.00000}\r\n\r\n", izzCm)
                 ;
             return;
         }
